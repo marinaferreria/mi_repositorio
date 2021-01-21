@@ -1,0 +1,477 @@
+/* 
+
+0-MENU
+1-HOME
+2-SERVICIOS
+3-CLIENTES/TESTIMONIOS
+4-NOSOTROS
+5-CONTACTO
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+//--SEO--//
+
+
+
+
+/* 0- START MENU*/
+.menu {
+  width: 100%;
+  text-decoration: none;
+  background-color: teal;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  /*Menu fijo al borde superior*/
+  top: 0px;
+  /*borde superior menu fijo cero*/
+  z-index: 1;
+}
+
+.menu a {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  margin: 20px;
+  padding: 10px;
+}
+
+.menu a:hover {
+  background-color: #00d271;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* 0-END MENU*/
+.action {
+  padding: 0 auto;
+}
+
+/* 1- START HOME*/
+.section-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.section-one {
+  margin-top: 80px;
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.txt {
+  font-family: 'Oswald', sans-serif;
+  align-items: center;
+  text-align: center;
+  line-height: 6em;
+  letter-spacing: 1px;
+}
+
+.txt-1 {
+  color: white;
+  font-size: 5em;
+}
+
+.txt-2 {
+  color: white;
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.button {
+  margin: 50px;
+  padding: 20px;
+  background-color: #00d271;
+  border: 1px;
+  border-style: solid white;
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  padding: 0px 0px 50px 50px;
+}
+
+/*END HOME*/
+/* 3- START SERVICIOS*/
+.txt-a {
+  background-color: #00d271;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.txt-3 {
+  color: white;
+  font-size: 4em;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+.footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+  font-family: 'Oswald', sans-serif;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pricing-item {
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding: 30px 0px 40px 0px;
+}
+
+.center-text p {
+  text-align: center;
+  color: white;
+}
+
+.section-title {
+  justify-content: center;
+  display: flex;
+  margin: 120px 0px 0px 0px;
+  color: white;
+  padding-bottom: 100px;
+}
+
+.pricing-item.active .pricing-header {
+  position: center;
+}
+
+.pricing-item.active .pricing-header .pricing-title {
+  color: #1e1e1e;
+}
+
+.pricing-item.active .pricing-body .price-wrapper {
+  background-color: #00d271;
+}
+
+.pricing-item.active .pricing-body .price-wrapper .currency {
+  color: #fff;
+}
+
+.pricing-item.active .pricing-body .price-wrapper .price {
+  color: #fff;
+}
+
+.pricing-item.active .pricing-body .price-wrapper .period {
+  color: #fff;
+}
+
+.pricing-item .pricing-header {
+  text-align: center;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.jazz {
+  background-color: #00d271;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pricing-item .pricing-header .pricing-title {
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.25px;
+  color: #1e1e1e;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.pricing-item .pricing-body {
+  margin-bottom: 40px;
+}
+
+.pricing-item .pricing-body .price-wrapper {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 13px;
+  background: #8261ee;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.pricing-item .pricing-body .price-wrapper .currency {
+  height: 47px;
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+  top: -1px;
+}
+
+.pricing-item .pricing-body .price-wrapper .price {
+  font-weight: 500;
+  font-size: 28px;
+  color: #fff;
+}
+
+.pricing-item .pricing-body .price-wrapper .period {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  letter-spacing: 0.88px;
+}
+
+.pricing-item .pricing-body .list li {
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #7a7a7a;
+  letter-spacing: 0.25px;
+  text-decoration: line-through;
+}
+
+.pricing-item .pricing-body .list li.active {
+  color: #7a7a7a;
+  text-decoration: none;
+}
+
+.pricing-item .pricing-footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.main-button {
+  text-decoration: none;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: #00d271;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+/*END SERVICIOS*/
+/* 3-START CLIENTES/TESTIMONIOS*/
+.sectionb {
+  height: 1000px;
+  padding: 100px;
+  background-color: black;
+
+}
+
+.team-item {
+  background: #fff;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+}
+
+.team-item:hover .team-content .team-info {
+  margin-left: 30px;
+}
+
+.team-item i {
+  display: block;
+  margin-left: 0px;
+  margin-top: 25px;
+  font-size: 30px;
+  color: #4E47DE;
+  text-align: center;
+}
+
+.team-item .user-image {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin-left: 25px;
+  float: left;
+}
+
+.team-item .team-content {
+  text-align: left;
+  overflow: hidden;
+}
+
+.team-item .team-content .team-info {
+  float: left;
+  margin-left: 20px;
+  margin-top: 8px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.team-item .team-content .team-info .user-name {
+  display: block;
+  font-weight: 400;
+  font-size: 17px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 5px;
+}
+
+.team-item .team-content .team-info span {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ff589e;
+  letter-spacing: 0.25px;
+}
+
+.team-item .team-content p {
+  margin-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #777;
+  letter-spacing: 0.6px;
+  line-height: 26px;
+}
+
+/*START CLIENTES*/
+.clientes {
+  height: 500px;
+  background-color: black;
+  justify-content: center;
+  display: flex;
+}
+
+.clientes1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 800px;
+  margin: 50px 0;
+  background-color: black;
+  transform: rotate(360deg);
+  transition: 1s linear all;
+}
+
+.nosotros {
+  height: 500px;
+  background-color: #00d271 !important;
+}
+
+.contacto {
+  height: 500px;
+  background-color: black;
+}
+
+/*END CLIENTES*/
+/*START CONTACTO*/
+.form {
+  background-size: 100vw 100vw;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.form-1 {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 1, 1, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.form-text-1 {
+  color: #fff;
+  text-align: center;
+  margin: 100px 0px 0px 0px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+.textarea {
+  min-height: 100px;
+  max-height: 200px;
+}
+
+#boton {
+  background: #00d271;
+  color: white;
+  padding: 20px;
+}
+
+#boton:hover {
+  cursor: pointer;
+}
+
+
+/*END SERVICIOS*/
+.footer {
+  background-color:black;
+}
+
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+// Create your own map
+$custom-colors: ("custom-color":#00d271);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@each $color-name,
+$color-value in $theme-colors {
+  .nav#{$color-name} {
+    color: $color-value !important;
+    background-color: $color-value !important;
+  }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";

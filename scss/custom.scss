@@ -1,0 +1,37 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+//$theme-colors: (
+//  "primary":    blue,
+//  "secondary":  red,
+//  "success":    green,
+//  "info":       #eae000,
+//  "warning":    #EAe,
+//  "danger":     #eae7,
+//  "light":      pink,
+//  "dark":       white
+//);
+
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Create your own map
+$custom-colors: ("custom-color": #900);
+
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@each $color-name, $color-value in $theme-colors {
+   .fuente-#{$color-name} {
+    color: $color-value !important; 
+    background-color: $color-value !important;
+    border-color: black !important;
+ }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
